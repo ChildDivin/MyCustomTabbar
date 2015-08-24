@@ -14,6 +14,17 @@
 		E7C9AA821B4270B300797D17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7C9AA811B4270B300797D17 /* Images.xcassets */; };
 		E7C9AA851B4270B300797D17 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C9AA831B4270B300797D17 /* LaunchScreen.xib */; };
 		E7C9AA911B4270B300797D17 /* MyCustomTabbarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C9AA901B4270B300797D17 /* MyCustomTabbarTests.m */; };
+		E7C9AAA21B42711800797D17 /* UITabBarCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C9AA9F1B42711800797D17 /* UITabBarCustom.m */; };
+		E7C9AAA61B4271D700797D17 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C9AAA41B4271D700797D17 /* HomeVC.m */; };
+		E7C9AAA71B4271D700797D17 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C9AAA51B4271D700797D17 /* HomeVC.xib */; };
+		E7C9AAAB1B4271F700797D17 /* ScheduleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C9AAA91B4271F700797D17 /* ScheduleVC.m */; };
+		E7C9AAAC1B4271F700797D17 /* ScheduleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C9AAAA1B4271F700797D17 /* ScheduleVC.xib */; };
+		E7C9AAB01B42720700797D17 /* UrbantvVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C9AAAE1B42720700797D17 /* UrbantvVC.m */; };
+		E7C9AAB11B42720700797D17 /* UrbantvVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C9AAAF1B42720700797D17 /* UrbantvVC.xib */; };
+		E7C9AAB51B42721300797D17 /* NewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C9AAB31B42721300797D17 /* NewVC.m */; };
+		E7C9AAB61B42721300797D17 /* NewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C9AAB41B42721300797D17 /* NewVC.xib */; };
+		E7C9AABA1B42722000797D17 /* ShareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C9AAB81B42722000797D17 /* ShareVC.m */; };
+		E7C9AABB1B42722000797D17 /* ShareVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C9AAB91B42722000797D17 /* ShareVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +51,23 @@
 		E7C9AA8A1B4270B300797D17 /* MyCustomTabbarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCustomTabbarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C9AA8F1B4270B300797D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7C9AA901B4270B300797D17 /* MyCustomTabbarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCustomTabbarTests.m; sourceTree = "<group>"; };
+		E7C9AA9E1B42711800797D17 /* UITabBarCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITabBarCustom.h; sourceTree = "<group>"; };
+		E7C9AA9F1B42711800797D17 /* UITabBarCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITabBarCustom.m; sourceTree = "<group>"; };
+		E7C9AAA31B4271D700797D17 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		E7C9AAA41B4271D700797D17 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		E7C9AAA51B4271D700797D17 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		E7C9AAA81B4271F700797D17 /* ScheduleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleVC.h; sourceTree = "<group>"; };
+		E7C9AAA91B4271F700797D17 /* ScheduleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleVC.m; sourceTree = "<group>"; };
+		E7C9AAAA1B4271F700797D17 /* ScheduleVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleVC.xib; sourceTree = "<group>"; };
+		E7C9AAAD1B42720700797D17 /* UrbantvVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrbantvVC.h; sourceTree = "<group>"; };
+		E7C9AAAE1B42720700797D17 /* UrbantvVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrbantvVC.m; sourceTree = "<group>"; };
+		E7C9AAAF1B42720700797D17 /* UrbantvVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UrbantvVC.xib; sourceTree = "<group>"; };
+		E7C9AAB21B42721300797D17 /* NewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewVC.h; sourceTree = "<group>"; };
+		E7C9AAB31B42721300797D17 /* NewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewVC.m; sourceTree = "<group>"; };
+		E7C9AAB41B42721300797D17 /* NewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewVC.xib; sourceTree = "<group>"; };
+		E7C9AAB71B42722000797D17 /* ShareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareVC.h; sourceTree = "<group>"; };
+		E7C9AAB81B42722000797D17 /* ShareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareVC.m; sourceTree = "<group>"; };
+		E7C9AAB91B42722000797D17 /* ShareVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +109,24 @@
 		E7C9AA731B4270B300797D17 /* MyCustomTabbar */ = {
 			isa = PBXGroup;
 			children = (
+				E7C9AA9A1B42711800797D17 /* Tabbarcontroller */,
 				E7C9AA781B4270B300797D17 /* AppDelegate.h */,
 				E7C9AA791B4270B300797D17 /* AppDelegate.m */,
+				E7C9AAA81B4271F700797D17 /* ScheduleVC.h */,
+				E7C9AAA91B4271F700797D17 /* ScheduleVC.m */,
+				E7C9AAAA1B4271F700797D17 /* ScheduleVC.xib */,
+				E7C9AAAD1B42720700797D17 /* UrbantvVC.h */,
+				E7C9AAAE1B42720700797D17 /* UrbantvVC.m */,
+				E7C9AAAF1B42720700797D17 /* UrbantvVC.xib */,
+				E7C9AAB21B42721300797D17 /* NewVC.h */,
+				E7C9AAB31B42721300797D17 /* NewVC.m */,
+				E7C9AAB41B42721300797D17 /* NewVC.xib */,
+				E7C9AAB71B42722000797D17 /* ShareVC.h */,
+				E7C9AAB81B42722000797D17 /* ShareVC.m */,
+				E7C9AAB91B42722000797D17 /* ShareVC.xib */,
+				E7C9AAA31B4271D700797D17 /* HomeVC.h */,
+				E7C9AAA41B4271D700797D17 /* HomeVC.m */,
+				E7C9AAA51B4271D700797D17 /* HomeVC.xib */,
 				E7C9AA7B1B4270B300797D17 /* ViewController.h */,
 				E7C9AA7C1B4270B300797D17 /* ViewController.m */,
 				E7C9AA7E1B4270B300797D17 /* Main.storyboard */,
@@ -117,6 +161,15 @@
 				E7C9AA8F1B4270B300797D17 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7C9AA9A1B42711800797D17 /* Tabbarcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				E7C9AA9E1B42711800797D17 /* UITabBarCustom.h */,
+				E7C9AA9F1B42711800797D17 /* UITabBarCustom.m */,
+			);
+			path = Tabbarcontroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +253,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7C9AA801B4270B300797D17 /* Main.storyboard in Resources */,
+				E7C9AAA71B4271D700797D17 /* HomeVC.xib in Resources */,
+				E7C9AAAC1B4271F700797D17 /* ScheduleVC.xib in Resources */,
+				E7C9AABB1B42722000797D17 /* ShareVC.xib in Resources */,
 				E7C9AA851B4270B300797D17 /* LaunchScreen.xib in Resources */,
+				E7C9AAB61B42721300797D17 /* NewVC.xib in Resources */,
 				E7C9AA821B4270B300797D17 /* Images.xcassets in Resources */,
+				E7C9AAB11B42720700797D17 /* UrbantvVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7C9AAA21B42711800797D17 /* UITabBarCustom.m in Sources */,
+				E7C9AAB01B42720700797D17 /* UrbantvVC.m in Sources */,
+				E7C9AAAB1B4271F700797D17 /* ScheduleVC.m in Sources */,
 				E7C9AA7D1B4270B300797D17 /* ViewController.m in Sources */,
+				E7C9AAA61B4271D700797D17 /* HomeVC.m in Sources */,
+				E7C9AAB51B42721300797D17 /* NewVC.m in Sources */,
 				E7C9AA7A1B4270B300797D17 /* AppDelegate.m in Sources */,
+				E7C9AABA1B42722000797D17 /* ShareVC.m in Sources */,
 				E7C9AA771B4270B300797D17 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

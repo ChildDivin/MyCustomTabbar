@@ -7,39 +7,82 @@
 //
 
 #import "AppDelegate.h"
-
+#import "UITabBarCustom.h"
+#import "HomeVC.h"
+#import "NewVC.h"
+#import "ScheduleVC.h"
+#import "UrbantvVC.h"
+#import "ShareVC.h"
 @interface AppDelegate ()
-
+{
+    HomeVC *homeObj;
+    NewVC *newObj;
+    ScheduleVC *scheduleObj;
+    UrbantvVC *urbanObj;
+    ShareVC *shareObj;
+}
 @end
-
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window =[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];//
+    [self gotoDetailApp:0];
+    self.navObj =[[UINavigationController alloc] initWithRootViewController:self.objCustomTabBar];
+    self.window.rootViewController=self.navObj;
+    self.navObj.navigationBarHidden=YES;
+    [self.window makeKeyAndVisible];
     return YES;
 }
-
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
-
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
-
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
-
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
-
 - (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
+#pragma mark-Cutom tab bar
+-(void)gotoDetailApp:(int)pintTabId{
+    [self setTabBar];
+    self.objCustomTabBar.delegate=self;
+    //  [self.navController pushViewController:self.objCustomTabBar animated:YES];
+    [self.objCustomTabBar setSelectedIndex:pintTabId];
+    [self.objCustomTabBar selectTab:pintTabId];
+}
+-(void)setTabBar
+{
+    //Note: Use this method and respective variables when there is TabBar in the app.
+    self.objCustomTabBar=[[UITabBarCustom alloc]init];
+    // first
+    homeObj =[[HomeVC alloc] initWithNibName:@"HomeVC" bundle:Nil];
+    UINavigationController *navHome = [[UINavigationController alloc] initWithRootViewController:homeObj];
+    
+    //second
+    scheduleObj = [[ScheduleVC alloc] initWithNibName:@"ScheduleVC" bundle:Nil];
+    UINavigationController *navSche = [[UINavigationController alloc] initWithRootViewController:scheduleObj];
+    
+    //Thard
+    urbanObj = [[UrbantvVC alloc] initWithNibName:@"UrbantvVC" bundle:Nil];
+    UINavigationController *navUrban =[[UINavigationController alloc] initWithRootViewController:urbanObj];
+    
+    //forth
+    newObj = [[NewVC alloc] initWithNibName:@"NewVC" bundle:Nil];
+    UINavigationController *navNew=[[UINavigationController alloc] initWithRootViewController:newObj];
+    //fifth
+    shareObj = [[ShareVC alloc] initWithNibName:@"ShareVC" bundle:Nil];
+    UINavigationController *navShare =[[UINavigationController alloc] initWithRootViewController:shareObj];
+    //    viewObj = [[ViewController alloc] initWithNibName:@"ViewController" bundle:Nil];
+    //    UINavigationController *navView =[[UINavigationController alloc] initWithRootViewController:viewObj];
+    
+    self.objCustomTabBar.viewControllers =@[navHome,navSche,navUrban,navNew,navShare];
+    
+    [navHome setNavigationBarHidden:TRUE];
+    [navNew setNavigationBarHidden:TRUE];
+    [navSche setNavigationBarHidden:TRUE];
+    [navShare setNavigationBarHidden:TRUE];
+    [navUrban setNavigationBarHidden:TRUE];
+    
+}
 @end

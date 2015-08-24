@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+@class UITabBarCustom;
+@interface AppDelegate : UIResponder <UIApplicationDelegate,UITabBarControllerDelegate>
+{
+    
+}
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) UINavigationController *navObj;
+@property (nonatomic) BOOL isPopToAllView;
+@property (nonatomic, retain) UITabBarCustom *objCustomTabBar;
+-(void)gotoDetailApp:(int)pintTabId;
 
 @end
 
